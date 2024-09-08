@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "unnamed-mod:block/smooth_sandstone_bricks"
+  }
+}
