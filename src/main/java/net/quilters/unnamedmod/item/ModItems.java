@@ -7,10 +7,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.quilters.unnamedmod.UnnamedMod;
+import net.quilters.unnamedmod.item.custom.LightningStickItem;
 
 public class ModItems {
     public static final Item TEST_ITEM = registerItem("test_item", new Item(new Item.Settings()));
-    public static final Item LIGHTNING_STICK = registerItem("lightning_stick", new Item(new Item.Settings()));
+    public static final Item LIGHTNING_STICK = registerItem("lightning_stick", new LightningStickItem(new Item.Settings().maxDamage(5)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(UnnamedMod.MOD_ID, name), item);
