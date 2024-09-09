@@ -20,6 +20,8 @@ public class ModItemGroups {
                         entries.add(ModItems.LIGHTNING_STICK);
                         entries.add(ModBlocks.SMOOTH_BASALT_BRICKS);
                         entries.add(ModBlocks.SMOOTH_SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.SMOOTH_SANDSTONE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.SMOOTH_BASALT_BRICKS_STAIRS);
                     }).build());
     public static void registerItemGroups() {
         UnnamedMod.LOGGER.info("Registering Item Groups for " + UnnamedMod.MOD_ID);

@@ -1,9 +1,8 @@
 package net.quilters.unnamedmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -30,6 +29,11 @@ public class ModBlocks {
                     .requiresTool()
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SMOOTH_SANDSTONE_BRICKS_STAIRS = registerBlock("smooth_sandstone_bricks_stairs",
+            new StairsBlock(ModBlocks.SMOOTH_SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SANDSTONE_STAIRS)));
+    public static final Block SMOOTH_BASALT_BRICKS_STAIRS = registerBlock("smooth_basalt_bricks_stairs",
+            new StairsBlock(ModBlocks.SMOOTH_BASALT_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BLACKSTONE_STAIRS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -4,7 +4,12 @@
 
   "block.unnamed-mod.smooth_basalt_bricks": "Smooth Basalt Bricks",
   "block.unnamed-mod.smooth_sandstone_bricks": "Smooth Sandstone Bricks",
+  "block.unnamed-mod.smooth_sandstone_bricks_stairs": "Smooth Sandstone Bricks Stairs",
+  "block.unnamed-mod.smooth_basalt_bricks_stairs": "Smooth Basalt Bricks Stairs",
+
   "itemgroup.unnamed-mod.unnamed_mod_items": "Unnamed Mod",
+
+
   "itemTooltip.unnamed-mod.lightning_stick": "Can summon a lightning strike on a block."
 
 }
